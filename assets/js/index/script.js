@@ -44,14 +44,19 @@ scene.add(fillLight);
 
 // camera and movement
 const initialAngle = Math.PI / 4;
-const radius = 15;
+const radius = 20; // Tăng khoảng cách camera
 
 let currentAngle = initialAngle;
 let targetAngle = initialAngle;
 let currentY = 0;
 let targetY = 0;
 
-camera.position.set(5, 0, 5);
+// Đặt vị trí ban đầu của camera
+camera.position.set(
+  radius * Math.cos(initialAngle),
+  0,
+  radius * Math.sin(initialAngle)
+);
 camera.lookAt(0, 0, 0);
 
 //  parallax control
