@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zentry</title>
+    <!-- import favicon -->
+    <link rel="icon" href="./assets/images/favicon.ico" type="image/x-icon" />
+    <!-- meta -->
+    <meta property="og:url" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="" />
+
+    <!-- link custom css page -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/main/css/reset.min.css" />
+    <link rel="stylesheet" href="./assets/main/css/style.min.css" />
+    <!-- end link custom css page -->
+  </head>
+  <body>
+    <div class="corridor"></div>
+    <div class="loading">Loading Scene</div>
+    <div class="hero">
+      <nav>
+        <div class="logo">
+          <a href="#">Astrolume</a>
+        </div>
+        <div class="nav-items">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </div>
+        <div class="site-year">
+          <p>2025 [H]</p>
+        </div>
+      </nav>
+      <h1>
+        Blending contemporary minimalism with futuristic innovation to create
+        designs that transcend trends and define elegance.
+      </h1>
+      <div class="footer">
+        <p>Made by TAO</p>
+      </div>
+    </div>
+    <div class="controls" style="display: none">
+      <h3>Scene Controls</h3>
+      <div class="control-item">
+        <label>Exposure:</label>
+        <input
+          type="range"
+          id="exposure"
+          min="0.1"
+          max="3"
+          step="0.1"
+          value="1.2"
+        />
+      </div>
+      <div class="control-item">
+        <label>Bloom:</label>
+        <input type="range" id="bloom" min="0" max="3" step="0.1" value="1.5" />
+      </div>
+      <div class="control-item">
+        <label>Grain:</label>
+        <input
+          type="range"
+          id="grain"
+          min="0"
+          max="0.3"
+          step="0.01"
+          value="0.08"
+        />
+      </div>
+      <div class="control-item">
+        <label>Ambient:</label>
+        <input
+          type="range"
+          id="ambient"
+          min="0"
+          max="1"
+          step="0.05"
+          value="0.3"
+        />
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.179.1/three.min.js"></script> -->
+
+    <!-- Three.js Extensions -->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/postprocessing/EffectComposer.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/postprocessing/RenderPass.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/postprocessing/ShaderPass.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/shaders/CopyShader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/postprocessing/UnrealBloomPass.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/shaders/LuminosityHighPassShader.js"></script>
+    <script type="module" src="./assets/main/js/script.min.js"></script>
+  </body>
+</html>
+<!-- https://www.youtube.com/watch?v=qvR7D73V0gk&t=103s -->
